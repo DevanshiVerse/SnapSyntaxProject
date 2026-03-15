@@ -1,0 +1,115 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+background:white;
+overflow:hidden;
+}
+
+/* Corner text */
+
+.profile{
+position:absolute;
+top:25px;
+left:25px;
+font-size:20px;
+}
+
+.project{
+position:absolute;
+top:25px;
+right:25px;
+font-size:20px;
+}
+
+.portfolio{
+position:absolute;
+bottom:25px;
+left:25px;
+font-size:20px;
+}
+
+.contact{
+position:absolute;
+bottom:25px;
+right:25px;
+font-size:20px;
+}
+
+/* Center title */
+
+.center-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:34px;
+font-weight:bold;
+}
+
+/* Kamui container */
+
+.kamui-area{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:400px;
+height:250px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* vertical rectangle line */
+
+.vertical-line{
+position:absolute;
+width:1.2mm;
+height:220px;
+background:black;
+z-index:1;
+}
+
+/* Kamui text */
+
+.kamui-text{
+position:absolute;
+font-size:60px;
+font-weight:bold;
+background:white;
+padding:0 10px;
+z-index:3;
+}
+
+/* Purple Kamui portal */
+
+.kamui-portal{
+position:absolute;
+width:120px;
+height:120px;
+border-radius:50%;
+background: radial-gradient(circle, #8a2be2, #4b0082);
+right:-200px;
+
+animation: kamuiMove 3s ease forwards;
+}
+
+/* Animation */
+
+@keyframes kamuiMove{
+
+0%{
+right:-200px;
+}
+
+100%{
+right:140px;
+}
+
+}
